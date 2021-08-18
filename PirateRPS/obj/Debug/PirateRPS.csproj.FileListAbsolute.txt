@@ -1,0 +1,2 @@
+C:\Users\David\source\repos\PirateRPS\PirateRPS\obj\Debug\PirateRPS.csproj.AssemblyReference.cache
+C:\Users\David\source\repos\PirateRPS\PirateRPS\obj\Debug\PirateRPS.csproj.CoreCompileInputs.cache
