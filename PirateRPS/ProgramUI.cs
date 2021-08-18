@@ -18,38 +18,37 @@ namespace PirateRPS
 
                 Random random = new Random();
                 bool keepPlaying = true;
-                string keepGoing;
                 string pirate;
                 string robot;
                 int win = 0;
                 int loss = 0;
 
-            while (keepPlaying != false)
+            while (keepPlaying)
             {
-                keepGoing = "";
+                
                 pirate = "";
                 robot = "";
+
+
+                
+                switch (random.Next(1,4))
+                {
+                    case 1:
+                        robot = "cannon";
+                        break;
+                    case 2:
+                        robot = "laser";
+                        break;
+                    case 3:
+                        robot = "netting";
+                        break;
+                }
 
                 while (pirate != "laser" && pirate != "netting" && pirate != "cannon")
                 {
                     Console.WriteLine("ARR, Welcome to Robot Pirate Island! it be PIRATES vs ROBOTS, Choose your weapon.\n" +
                             "LASER, CANNON, NETTING.");
-                    pirate = Console.ReadLine();
-                    pirate = pirate.ToLower();
-                }
-
-                int robotWeaponChoice = random.Next(0, 3);
-                switch (robotWeaponChoice)
-                {
-                    case 0:
-                        robot = "cannon";
-                        return;
-                    case 1:
-                        robot = "laser";
-                        return;
-                    case 2:
-                        robot = "netting";
-                        break;
+                    pirate = Console.ReadLine().ToLower();
                 }
 
                 switch (pirate)
@@ -112,19 +111,7 @@ namespace PirateRPS
                         break;
                 }
 
-                Console.WriteLine(" Matey, would you like to have another go at it? Enter Yes or No");
-                keepGoing = Console.ReadLine();
-                keepGoing = keepGoing.ToLower();
-
-                if(keepGoing == "yes")
-                {
-                    keepPlaying = true;
-                }
-                else
-                {
-                    keepPlaying = false;
-                }
-
+                
                 
             }
              
