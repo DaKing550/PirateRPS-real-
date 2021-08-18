@@ -1,2 +1,7 @@
 C:\Users\David\source\repos\PirateRPS\PirateRPS\obj\Debug\PirateRPS.csproj.AssemblyReference.cache
 C:\Users\David\source\repos\PirateRPS\PirateRPS\obj\Debug\PirateRPS.csproj.CoreCompileInputs.cache
+C:\Users\David\source\repos\PirateRPS\PirateRPS\bin\Debug\PirateRPS.exe.config
+C:\Users\David\source\repos\PirateRPS\PirateRPS\bin\Debug\PirateRPS.exe
+C:\Users\David\source\repos\PirateRPS\PirateRPS\bin\Debug\PirateRPS.pdb
+C:\Users\David\source\repos\PirateRPS\PirateRPS\obj\Debug\PirateRPS.exe
+C:\Users\David\source\repos\PirateRPS\PirateRPS\obj\Debug\PirateRPS.pdb
