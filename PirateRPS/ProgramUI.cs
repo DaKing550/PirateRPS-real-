@@ -18,6 +18,7 @@ namespace PirateRPS
 
                 Random random = new Random();
                 bool keepPlaying = true;
+                string keepGoing;
                 string pirate;
                 string robot;
                 int win = 0;
@@ -28,6 +29,7 @@ namespace PirateRPS
                 
                 pirate = "";
                 robot = "";
+                Console.Clear();
 
 
                 
@@ -110,11 +112,26 @@ namespace PirateRPS
                         }
                         break;
                 }
+               
+                Console.WriteLine("Matey, would you like to have another go at it? Enter Yes or No");
+                keepGoing = Console.ReadLine();
+                keepGoing = keepGoing.ToLower();
 
-                
-                
+                if (keepGoing == "yes")
+                {
+                    keepPlaying = true;
+                }
+                else
+                {
+                    keepPlaying = false;
+                    Console.WriteLine("Tis been a pleasure!");
+                        Console.ReadLine();
+                }
+
+
+
             }
-             
+
         }
     }   
 }
